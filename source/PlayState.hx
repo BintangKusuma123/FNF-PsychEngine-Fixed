@@ -3404,7 +3404,7 @@ class PlayState extends MusicBeatState
 				FlxG.sound.music.stop();
 
 				persistentUpdate = false;
-				persistentDraw = false;
+				//persistentDraw = false;
 				for (tween in modchartTweens) {
 					tween.active = true;
 				}
