@@ -100,8 +100,7 @@ class PlayState extends MusicBeatState
 		['Nice', 0.7], //69%
 		['Good', 0.8], //From 70% to 79%
 		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['Sick!', 1] //From 90% to 99%
 	];
 
 	//event variables
@@ -5252,8 +5251,8 @@ class PlayState extends MusicBeatState
 	}
 
 	public var ratingName:String = '?';
-	public var ratingPercent:Float;
-	public var ratingFC:String;
+	public var ratingPercent:Float = ' (0%) ';
+	public var ratingFC:String = '- ?';
 	public function RecalculateRating(badHit:Bool = false) {
 		setOnLuas('score', songScore);
 		setOnLuas('misses', songMisses);
