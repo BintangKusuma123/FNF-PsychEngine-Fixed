@@ -5251,8 +5251,8 @@ class PlayState extends MusicBeatState
 	}
 
 	public var ratingName:String = '?';
-	public var ratingPercent:Float = ' (0%) ';
-	public var ratingFC:String = '- ?';
+	public var ratingPercent:Float;
+	public var ratingFC:String;
 	public function RecalculateRating(badHit:Bool = false) {
 		setOnLuas('score', songScore);
 		setOnLuas('misses', songMisses);
